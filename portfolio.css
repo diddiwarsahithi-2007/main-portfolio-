@@ -1,5 +1,5 @@
 
-#main{
+/*#main{
     height:auto;
     width: auto;
     color: white;
@@ -49,7 +49,7 @@ p{
     height: 150px;
     padding-bottom: 10px;
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
     justify-content:space-around;
     align-items: center;
     flex-wrap: wrap-reverse;
@@ -97,7 +97,7 @@ background-color: rgb(162, 189, 214) ;
     flex-direction:row;
     justify-content:space-around;
     color: black;
-}
+}*/
 /* ==========================================
    MOBILE RESPONSIVENESS FIX
    Add this at the END of portfolio.css
@@ -310,7 +310,7 @@ textarea {
     .skill-container,
     .card-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: stretch;
         gap: 20px;
     }
