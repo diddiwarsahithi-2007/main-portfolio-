@@ -827,7 +827,18 @@ background-color: rgb(169, 202, 169);
     button {
         max-width: 100%;
         overflow-wrap: anywhere;
-    }}
+    }
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    background-color: rgb(233, 180, 212);
+    color:black;
+}
+button:hover{
+background-color: rgb(169, 202, 169);
+}}
 /* Small phones */
 @media screen and (max-width: 480px) {
     section {
@@ -872,7 +883,17 @@ background-color: rgb(169, 202, 169);
         min-height: 90px;
     }
 
-
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    background-color: rgb(233, 180, 212);
+    color:black;
+}
+button:hover{
+background-color: rgb(169, 202, 169);
+}
 }
 /* Respect reduced-motion preferences */
 /*@media (prefers-reduced-motion: reduce) {
