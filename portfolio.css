@@ -675,6 +675,17 @@ textarea {
     #mine {
         flex-wrap: nowrap;
     }
+    .navbar{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    background-color: rgb(233, 180, 212);
+    color:black;
+}
+button:hover{
+background-color: rgb(169, 202, 169);
+}
 }
 
 /* Mobile phones */
@@ -860,19 +871,9 @@ textarea {
         width: 90px;
         min-height: 90px;
     }
-}
-.navbar{
-    display: flex;
-    justify-content: space-around;
-}
-button{
-    background-color: rgb(233, 180, 212);
-    color:black;
-}
-button:hover{
-background-color: rgb(169, 202, 169);
-}
 
+
+}
 /* Respect reduced-motion preferences */
 /*@media (prefers-reduced-motion: reduce) {
     html {
