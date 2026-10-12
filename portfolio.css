@@ -1,4 +1,41 @@
 
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-wrap: break-word;
+}
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    object-fit: contain;
+}
+button,
+input,
+textarea,
+select {
+    max-width: 100%;
+    font: inherit;
+}
+
 /*#main{
     height:auto;
     width: auto;
@@ -104,47 +141,15 @@ background-color: rgb(162, 189, 214) ;
    ========================================== */
 
 /* Prevent unwanted horizontal scrolling */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
-html {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: clip;
-    scroll-behavior: smooth;
-    scroll-padding-top: 80px;
-}
 
-body {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    overflow-wrap: break-word;
-}
 
-img,
-video,
-iframe {
-    max-width: 100%;
-    height: auto;
-}
 
-img {
-    object-fit: contain;
-}
 
-button,
-input,
-textarea,
-select {
-    max-width: 100%;
-    font: inherit;
-}
 
-a {
+
+
+/*a {
     overflow-wrap: anywhere;
 }
 
@@ -160,7 +165,7 @@ section {
 }
 
 /* Keep common content areas within the screen */
-.container,
+/*.container,
 .content,
 .home,
 .about,
@@ -170,10 +175,11 @@ section {
 .project-list {
     min-width: 0;
     max-width: 100%;
+    justify-content: space-around;
 }
 
 /* Make project and card layouts flexible */
-.project-list,
+/*.project-list,
 .projects-container,
 .skills-container,
 .skill-container,
@@ -182,7 +188,7 @@ section {
 }
 
 /* Prevent images from overflowing their cards */
-.project-item,
+/*.project-item,
 .project-card,
 .card {
     min-width: 0;
@@ -199,7 +205,7 @@ section {
 }
 
 /* Make contact forms responsive */
-form {
+/*form {
     width: 100%;
     max-width: 100%;
 }
@@ -216,7 +222,7 @@ textarea {
 }
 
 /* Tablet screens */
-@media screen and (max-width: 1024px) {
+/*@media screen and (min-width: 769px) {
     section {
         padding-left: clamp(16px, 4vw, 32px);
         padding-right: clamp(16px, 4vw, 32px);
@@ -237,13 +243,13 @@ textarea {
 }
 
 /* Mobile phones */
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     body {
         font-size: 16px;
     }
 
     /* Reset fixed-width layouts */
-    .container,
+    /*.container,
     .content,
     .home,
     .about,
@@ -256,7 +262,7 @@ textarea {
     }
 
     /* Stack navigation items if the existing menu uses a list */
-    div {
+    /*div {
         width: 100%;
         max-width: 100%;
         padding: 12px 16px;
@@ -274,7 +280,7 @@ textarea {
     }
 
     /* Center the main introduction */
-    header,
+    /*header,
     .home {
         text-align: center;
     }
@@ -295,7 +301,7 @@ textarea {
     }
 
     /* Scale the profile image */
-    .profile-img,
+    /*.profile-img,
     .about-img {
         display: block;
         max-width: min(80%, 280px);
@@ -304,7 +310,7 @@ textarea {
     }
 
     /* Stack project cards vertically */
-    .project-list,
+    /*.project-list,
     .projects-container,
     .skills-container,
     .skill-container,
@@ -325,7 +331,7 @@ textarea {
     }
 
     /* Make form controls comfortable to use */
-    form {
+    /*form {
         display: flex;
         flex-direction: column;
         gap: 14px;
@@ -340,7 +346,7 @@ textarea {
     }
 
     /* Prevent oversized buttons */
-    .btn,
+    /*.btn,
     button {
         max-width: 100%;
         overflow-wrap: anywhere;
@@ -353,7 +359,7 @@ textarea {
 }
 
 /* Small phones */
-@media screen and (max-width: 480px) {
+/*@media screen and (max-width: 480px) {
     section {
         padding-left: 16px;
         padding-right: 16px;
@@ -396,7 +402,8 @@ textarea {
 }
 
 /* Respect accessibility settings */
-@media (prefers-reduced-motion: reduce) {
+/*@media (prefers-reduced-motion: reduce) {
+
     html {
         scroll-behavior: auto;
     }
@@ -407,5 +414,458 @@ textarea {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
+    }
+}*/
+```css
+/* Apply box-sizing to all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Basic page settings */
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-wrap: break-word;
+    font-family: Arial, sans-serif;
+}
+
+/* Images and media */
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    object-fit: contain;
+}
+
+button,
+input,
+textarea,
+select {
+    max-width: 100%;
+    font: inherit;
+}
+
+a {
+    overflow-wrap: anywhere;
+}
+
+/* Main portfolio */
+#main {
+    width: 100%;
+    max-width: 100%;
+    color: white;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgb(16, 1, 29);
+    color: rgb(91, 6, 170);
+    overflow-wrap: anywhere;
+}
+
+/* Introduction section */
+#mine {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3%;
+    padding: 20px;
+    gap: 40px;
+    border: 2px solid rgb(168, 157, 191);
+    background-color: rgb(168, 157, 191);
+    flex-wrap: wrap;
+}
+
+.content {
+    width: 450px;
+    max-width: 100%;
+    min-width: 0;
+}
+
+/* About section */
+#about {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h5 {
+    color: black;
+}
+
+h2 {
+    color: rgb(83, 3, 158);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    color: black;
+}
+
+p {
+    color: black;
+    font-family: sans-serif;
+    font-style: normal;
+    overflow-wrap: anywhere;
+}
+
+/* Profile image */
+#my_img {
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Skills section */
+.skills-container {
+    background-color: rgb(186, 203, 238);
+    min-height: 150px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: black;
+}
+
+.skill {
+    color: black;
+    background-color: rgb(186, 203, 238);
+    padding-bottom: 5px;
+}
+
+.skill-card {
+    width: 100px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid rgb(162, 189, 214);
+    background-color: rgb(162, 189, 214);
+    color: black;
+    padding: 10px;
+}
+
+.skill-card:hover {
+    background-color: rgb(188, 228, 188);
+}
+
+/* Projects section */
+.project-list {
+    min-height: 300px;
+    height: auto;
+    width: 100%;
+    font-family: 'Gill Sans', sans-serif;
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    min-height: 240px;
+    height: auto;
+    width: 250px;
+    max-width: 100%;
+    background-color: rgb(243, 229, 246);
+    padding: 16px;
+}
+
+.project-card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-inline: auto;
+}
+
+/* Contact section */
+#contact {
+    background-color: rgb(186, 203, 238);
+    min-height: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    color: black;
+}
+
+/* Sections and navigation */
+section,
+header,
+footer,
+nav {
+    max-width: 100%;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Forms */
+form {
+    width: 100%;
+    max-width: 100%;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    min-width: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Tablet and laptop screens */
+@media screen and (min-width: 769px) {
+    #main {
+        width: 100%;
+    }
+
+    section {
+        padding-left: clamp(16px, 4vw, 32px);
+        padding-right: clamp(16px, 4vw, 32px);
+    }
+
+    h1 {
+        font-size: clamp(28px, 5vw, 44px);
+    }
+
+    h2 {
+        font-size: clamp(24px, 4vw, 34px);
+    }
+
+    p {
+        line-height: 1.7;
+    }
+
+    #mine {
+        flex-wrap: nowrap;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    #main,
+    .container,
+    .content,
+    .home,
+    .about,
+    .skills,
+    .projects,
+    .contact,
+    .project-list {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        
+    }
+
+    /* Introduction stacks when space is limited */
+    #mine {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 16px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    /* Navigation */
+    nav {
+        padding: 10px 12px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    /* Headings and text */
+    header,
+    .home {
+        text-align: center;
+    }
+
+    header h1,
+    .home h1 {
+        font-size: clamp(27px, 7vw, 38px);
+        line-height: 1.2;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    section p {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    /* Profile images */
+    #my_img,
+    .profile-img,
+    .about-img {
+        display: block;
+        width: auto;
+        max-width: min(80%, 280px);
+        height: auto;
+        margin: 20px auto;
+    }
+
+    /* Skills and projects */
+    .skills-container,
+    .project-list,
+    .projects-container,
+    .skill-container,
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        height: auto;
+    }
+
+    .skill-card {
+        flex: 0 1 100px;
+    }
+
+    .project-card,
+    .project-item,
+    .card {
+        width: 100%;
+        max-width: 300px;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Contact */
+    #contact {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        text-align: center;
+    }
+
+    /* Forms and buttons */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    form input,
+    form textarea,
+    form select,
+    form button {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .btn,
+    button {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+/* Small phones */
+@media screen and (max-width: 480px) {
+    section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    #about {
+        padding: 16px;
+    }
+
+    #my_img,
+    .profile-img,
+    .about-img {
+        max-width: min(75%, 220px);
+    }
+
+    .project-card,
+    .project-item,
+    .card {
+        padding: 16px;
+    }
+
+    .skill-card {
+        width: 90px;
+        min-height: 90px;
+    }
+}
+
+/* Respect reduced-motion preferences */
+/*@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
     }
 }
